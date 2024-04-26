@@ -3,24 +3,13 @@ using namespace std;
 
 long long getSubtraction(long long numberOne, long long numberTwo) {
     return numberOne - numberTwo;
-
-long long divide (long long a, long long b) {
-  return a / b;
-
-long long add(long long num1,long long num2){
-    return num1+num2;
-}
-
-long long getMultiplication(long long number1, long long number2){
-    return number1*number2;
-
 }
 
 long long divide (long long num1, long long num2) {
   return num1 / num2;
 }
 
-long long add(long long num1,long long num2){
+long long add(long long num1, long long num2){
     return num1 + num2;
 }
 
@@ -43,16 +32,21 @@ int main() {
     char operation;
     cin >> operation;
     
-    if (operation == '+') {
-        cout << add(num1, num2) << '\n';
-    } else if (operation == '-') {
-        cout << getSubtraction(num1, num2) << '\n';
-    } else if (operation == '*') {
-        cout << getMultiplication(num1, num2) << '\n';
-    } else if (operation == '/') {
-        cout << divide(num1, num2) << '\n';
-    } else {
-        cout << "Invalid operation\n";
+    switch (operation) {
+        case '+':
+            cout << add(num1, num2) << '\n';
+            break;
+        case '-':
+            cout << getSubtraction(num1, num2) << '\n';
+            break;
+        case '*':
+            cout << getMultiplication(num1, num2) << '\n';
+            break;
+        case '/':
+            cout << divide(num1, num2) << '\n';
+            break;
+        default:
+            cout << "Invalid operation\n";
     }
     return 0;
 }
