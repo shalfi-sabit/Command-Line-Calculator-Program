@@ -1,3 +1,3 @@
-int getMultiplication(int number1, int number2){
+long long getMultiplication(long long number1, long long number2){
     return number1*number2;
 }
