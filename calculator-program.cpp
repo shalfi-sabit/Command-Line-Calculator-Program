@@ -1,5 +1,5 @@
 
 
-int add(int num1,int num2){
+long long add(long long num1,long long num2){
     return num1+num2;
 }
