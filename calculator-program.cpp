@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-boolean isEven(long long num){
+bool isEven(long long num){
     if(num%2) return false
     else return true
 }
