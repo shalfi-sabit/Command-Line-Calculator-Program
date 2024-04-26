@@ -1,3 +1,3 @@
-int divide (int a, int b) {
+long long divide (long long a, b) {
   return a / b;
 }
