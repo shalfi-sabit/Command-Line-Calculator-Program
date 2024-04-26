@@ -22,6 +22,14 @@ long long getMultiplication(long long number1, long long number2){
     return number1 * number2;
 }
 
+bool isNegative(long long number){
+    if(number<0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 bool isPositive(long long number){
     if(number > 0) return true;
     return false;
