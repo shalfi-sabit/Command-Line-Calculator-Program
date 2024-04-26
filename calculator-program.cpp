@@ -17,6 +17,14 @@ long long getMultiplication(long long number1, long long number2){
     return number1 * number2;
 }
 
+bool isNegative(long long number){
+    if(number<0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 int main() {
     cout << "### Command line Calculator Program ###\n\n";
     
