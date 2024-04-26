@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+boolean isEven(long long num){
+    if(num%2) return false
+    else return true
+}
+
 long long getSubtraction(long long numberOne, long long numberTwo) {
     return numberOne - numberTwo;
 }
